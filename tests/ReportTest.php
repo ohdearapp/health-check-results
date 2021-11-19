@@ -11,7 +11,7 @@ it('can create create report', function () {
             'message',
             'ok',
             ['name' => 'value']
-        )
+        ),
     ];
 
     $report = new Report(
