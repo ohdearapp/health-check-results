@@ -10,12 +10,12 @@ it('can create create report', function () {
     assertMatchesSnapshot($report->toJson());
 });
 
-it('can be created from json', function() {
-   $json = getReport()->toJson();
+it('can be created from json', function () {
+    $json = getReport()->toJson();
 
-   $newReport = Report::fromJson($json);
+    $newReport = Report::fromJson($json);
 
-   expect($newReport->toJson())->toBe($json);
+    expect($newReport->toJson())->toBe($json);
 });
 
 function getReport(): Report

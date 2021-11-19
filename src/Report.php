@@ -17,7 +17,7 @@ class Report
         $properties = json_decode($json, true);
 
         $lines = array_map(
-            fn(array $lineProperties) => new Line(...$lineProperties),
+            fn (array $lineProperties) => new Line(...$lineProperties),
             $properties['lines'],
         );
 
