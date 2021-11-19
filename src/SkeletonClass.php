@@ -1,7 +1,7 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace OhDear\HealthCheckReport;
 
-class SkeletonClass
+class HealthCheckReportClass
 {
 }

@@ -1,16 +1,16 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "ohdearapp/health-check-report",
+    "description": "Create a health check report to be verified by Oh Dear",
     "keywords": [
-        ":vendor_name",
-        ":package_slug"
+        "ohdearapp",
+        "health-check-report"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/ohdearapp/health-check-report",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Freek Van der Herten",
+            "email": "freek@spatie.be",
             "role": "Developer"
         }
     ],
@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src"
+            "OhDear\\HealthCheckReport\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "OhDear\\HealthCheckReport\\Tests\\": "tests"
         }
     },
     "scripts": {
