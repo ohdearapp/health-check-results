@@ -12,6 +12,21 @@ class Report
     /** @var array<int, Line> */
     protected array $lines;
 
+    public static function fromJson(string $json): Report
+    {
+        $properties = json_decode($json, true);
+
+        $lines = array_map(
+            fn(array $lineProperties) => new Line(...$lineProperties),
+            $properties['lines'],
+        );
+
+        return new static(
+            finishedAt: new DateTime($properties['finishedAt']),
+            lines: $lines,
+        );
+    }
+
     /**
      * @param \DateTimeInterface|null $finishedAt
      * @param array<int, Line> $lines
@@ -23,9 +38,11 @@ class Report
         $this->lines = $lines;
     }
 
-    public function addLine(Line $lines)
+    public function addLine(Line $line): self
     {
-        $this->lines[] = $lines;
+        $this->lines[] = $line;
+
+        return $this;
     }
 
     public function toJson(): string
