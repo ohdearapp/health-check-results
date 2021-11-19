@@ -26,7 +26,7 @@ function getReport(): Report
             'message',
             'ok',
             ['name' => 'value']
-        )
+        ),
     ];
 
     return new Report(
