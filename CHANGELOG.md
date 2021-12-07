@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to `health-check-report` will be documented in this file.
+All notable changes to `health-check-results` will be documented in this file.
 
 ## 0.0.3 - 2021-11-19
 

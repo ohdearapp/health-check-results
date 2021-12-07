@@ -1,8 +1,8 @@
 # Create a health check report to be verified by Oh Dear
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/ohdearapp/health-check-report.svg?style=flat-square)](https://packagist.org/packages/ohdearapp/health-check-report)
-[![Tests](https://github.com/ohdearapp/health-check-report/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/ohdearapp/health-check-report/actions/workflows/run-tests.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/ohdearapp/health-check-report.svg?style=flat-square)](https://packagist.org/packages/ohdearapp/health-check-report)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/ohdearapp/health-check-results.svg?style=flat-square)](https://packagist.org/packages/ohdearapp/health-check-results)
+[![Tests](https://github.com/ohdearapp/health-check-results/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/ohdearapp/health-check-results/actions/workflows/run-tests.yml)
+[![Total Downloads](https://img.shields.io/packagist/dt/ohdearapp/health-check-results.svg?style=flat-square)](https://packagist.org/packages/ohdearapp/health-check-results)
 
 Using [Oh Dear](https://ohdear.app) you can monitor various aspects or your application and server. This way you could get alerts when:
 
@@ -25,7 +25,7 @@ To learn more head over to the [Application Health Monitoring docs at Oh Dear](h
 You can install the package via composer:
 
 ```bash
-composer require ohdearapp/health-check-report
+composer require ohdearapp/health-check-results
 ```
 
 ## Usage

@@ -1,11 +1,11 @@
 {
-    "name": "ohdearapp/health-check-report",
+    "name": "ohdearapp/health-check-results",
     "description": "Create a health check report to be verified by Oh Dear",
     "keywords": [
         "ohdearapp",
-        "health-check-report"
+        "health-check-results"
     ],
-    "homepage": "https://github.com/ohdearapp/health-check-report",
+    "homepage": "https://github.com/ohdearapp/health-check-results",
     "license": "MIT",
     "authors": [
         {
