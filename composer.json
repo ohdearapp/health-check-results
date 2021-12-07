@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "OhDear\\HealthCheckReport\\": "src"
+            "OhDear\\HealthCheckResults\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "OhDear\\HealthCheckReport\\Tests\\": "tests"
+            "OhDear\\HealthCheckResults\\Tests\\": "tests"
         }
     },
     "scripts": {

@@ -1,6 +1,6 @@
 <?php
 
-namespace OhDear\HealthCheckReport;
+namespace OhDear\HealthCheckResults;
 
 class CheckResult
 {

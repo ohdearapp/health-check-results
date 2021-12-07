@@ -1,10 +1,10 @@
 <?php
 
-namespace OhDear\HealthCheckReport;
+namespace OhDear\HealthCheckResults;
 
 use DateTime;
 use DateTimeInterface;
-use OhDear\HealthCheckReport\CheckResult;
+use OhDear\HealthCheckResults\CheckResult;
 
 class CheckResults
 {
@@ -47,7 +47,7 @@ class CheckResults
     }
 
     /**
-     * @return array<int, \OhDear\HealthCheckReport\CheckResult>
+     * @return array<int, \OhDear\HealthCheckResults\CheckResult>
      */
     public function checkResults(): array
     {

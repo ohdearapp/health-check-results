@@ -1,7 +1,7 @@
 <?php
 
-use OhDear\HealthCheckReport\CheckResult;
-use OhDear\HealthCheckReport\CheckResults;
+use OhDear\HealthCheckResults\CheckResult;
+use OhDear\HealthCheckResults\CheckResults;
 use function Spatie\Snapshots\assertMatchesJsonSnapshot;
 
 it('can write health check results as json', function() {
