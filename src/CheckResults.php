@@ -4,7 +4,6 @@ namespace OhDear\HealthCheckReport;
 
 use DateTime;
 use DateTimeInterface;
-use OhDear\HealthCheckReport\CheckResult;
 
 class CheckResults
 {

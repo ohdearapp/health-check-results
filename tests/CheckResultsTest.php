@@ -4,7 +4,7 @@ use OhDear\HealthCheckReport\CheckResult;
 use OhDear\HealthCheckReport\CheckResults;
 use function Spatie\Snapshots\assertMatchesJsonSnapshot;
 
-it('can write health check results as json', function() {
+it('can write health check results as json', function () {
     $checkResults = new CheckResults(DateTime::createFromFormat('Y-m-d H:i:s', '2021-01-01 00:00:00'));
 
     $checkResult = new CheckResult(
@@ -22,7 +22,7 @@ it('can write health check results as json', function() {
     assertMatchesJsonSnapshot($checkResults->toJson());
 });
 
-it('can convert JSON to health check results', function() {
+it('can convert JSON to health check results', function () {
     $stub = __DIR__ . '/stubs/storedHealthChecks.json';
 
     $jsonContent = file_get_contents($stub);
