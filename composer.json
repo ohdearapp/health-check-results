@@ -1,8 +1,11 @@
 {
     "name": "ohdearapp/health-check-results",
-    "description": "Create a health check report to be verified by Oh Dear",
+    "description": "Create application health check results for Oh Dear",
     "keywords": [
-        "ohdearapp",
+        "ohdear",
+        "monitoring",
+        "application",
+        "health",
         "health-check-results"
     ],
     "homepage": "https://github.com/ohdearapp/health-check-results",
