@@ -4,7 +4,21 @@
 [![Tests](https://github.com/ohdearapp/health-check-report/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/ohdearapp/health-check-report/actions/workflows/run-tests.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/ohdearapp/health-check-report.svg?style=flat-square)](https://packagist.org/packages/ohdearapp/health-check-report)
 
-Using this package you can build up the JSON that Oh Dear expects for the health check.
+Using [Oh Dear](https://ohdear.app) you can monitor various aspects or your application and server. This way you could get alerts when:
+
+- disk space is running low
+- the database is down
+- Redis cannot be reached
+- mails cannot be sent
+- there are many application errors in a small timeframe (via [Flare](https://flareapp.io))
+- a reboot of your app is required
+- ...
+
+You can monitor any aspect of your app that you want.
+
+Using this package you can build up the JSON that [Oh Dear](https://ohdear.app) expects for its health check. 
+
+To learn more head over to the [Application Health Monitoring docs at Oh Dear](https://ohdear.app/docs/general/application-health-monitoring).
 
 ## Installation
 
@@ -19,25 +33,38 @@ composer require ohdearapp/health-check-report
 Here's an example that shows how you can create the JSON that Oh Dear expects for the health check.
 
 ```php
-    $lines = [
-        new Line(
-            'name',
-            'message',
-            'ok',
-            ['name' => 'value']
-        )
-    ];
+$checkResults = new CheckResults(DateTime::createFromFormat('Y-m-d H:i:s', '2021-01-01 00:00:00'));
 
-    $report = new Report(
-        finishedAt: new DateTimeImmutable('2001-01-01 00:00:00'),
-        lines: $lines,
-    );
+$checkResult = new CheckResult(
+    name: 'UsedDiskSpace',
+    label: 'Used disk space',
+    notificationMessage: 'Your disk is almost full (91%)',
+    shortSummary: '91%',
+    status: CheckResult::STATUS_FAILED,
+    meta: ['used_disk_space_percentage' => 91]
+);
+
+$checkResults->addCheckResult($checkResult);
 ```
 
 This will output this JSON:
 
 ```
-{"finishedAt":"2001-01-01 00:00:00","lines":[{"name":"name","message":"message","status":"ok","meta":{"name":"value"}}]}
+{
+    "finishedAt": 1609459200,
+    "checkResults": [
+        {
+            "name": "UsedDiskSpace",
+            "label": "Used disk space",
+            "notificationMessage": "Your disk is almost full (91%)",
+            "shortSummary": "91%",
+            "status": "failed",
+            "meta": {
+                "used_disk_space_percentage": 91
+            }
+        }
+    ]
+}
 ```
 
 ## Testing

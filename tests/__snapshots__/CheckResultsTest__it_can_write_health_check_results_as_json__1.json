@@ -1,0 +1,15 @@
+{
+    "finishedAt": 1609459200,
+    "checkResults": [
+        {
+            "name": "UsedDiskSpace",
+            "label": "Used disk space",
+            "notificationMessage": "Your disk is almost full (91%)",
+            "shortSummary": "91%",
+            "status": "failed",
+            "meta": {
+                "used_disk_space_percentage": 91
+            }
+        }
+    ]
+}
