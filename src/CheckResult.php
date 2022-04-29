@@ -21,6 +21,7 @@ class CheckResult
      */
     public static function make(
         string $name,
+        string $label = '',
         string $notificationMessage = '',
         string $shortSummary = '',
         string $status = '',
