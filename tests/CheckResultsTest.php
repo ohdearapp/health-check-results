@@ -2,6 +2,7 @@
 
 use OhDear\HealthCheckResults\CheckResult;
 use OhDear\HealthCheckResults\CheckResults;
+
 use function Spatie\Snapshots\assertMatchesJsonSnapshot;
 
 it('can write health check results as json', function () {
