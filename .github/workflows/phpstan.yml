@@ -24,6 +24,11 @@ jobs:
           php-version: '8.0'
           coverage: none
 
+      - name: Allow composer plugins
+        run: |
+          composer config --no-plugins allow-plugins.pestphp/pest-plugin true
+          composer config --no-plugins allow-plugins.phpstan/extension-installer true
+
       - name: Install composer dependencies
         uses: ramsey/composer-install@v2
 
