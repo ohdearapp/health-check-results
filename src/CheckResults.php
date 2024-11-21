@@ -31,7 +31,7 @@ class CheckResults
      * @param \DateTimeInterface|null $finishedAt
      * @param array<int, CheckResult> $checkResults
      */
-    public function __construct(DateTimeInterface $finishedAt = null, array $checkResults = [])
+    public function __construct(DateTimeInterface|null $finishedAt = null, array $checkResults = [])
     {
         $this->finishedAt = $finishedAt ?? new DateTime();
 
