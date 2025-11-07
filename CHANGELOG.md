@@ -2,6 +2,15 @@
 
 All notable changes to `health-check-results` will be documented in this file.
 
+## 1.0.3 - 2025-11-07
+
+### What's Changed
+
+* ci: add tests for PHP > 8.0 by @Chris53897 in https://github.com/ohdearapp/health-check-results/pull/11
+* feat: bump versions: allow pest > 1 by @Chris53897 in https://github.com/ohdearapp/health-check-results/pull/12
+
+**Full Changelog**: https://github.com/ohdearapp/health-check-results/compare/1.0.2...1.0.3
+
 ## 1.0.2 - 2024-11-29
 
 ### What's Changed
