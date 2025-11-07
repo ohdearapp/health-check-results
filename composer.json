@@ -21,13 +21,13 @@
         "php": "^8.0"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.0",
-        "pestphp/pest": "^1.20",
+        "friendsofphp/php-cs-fixer": "^3.89.2",
+        "pestphp/pest": "^1.23.1 || ^2.0 || ^3.0 || ^4.0",
         "phpstan/extension-installer": "^1.1",
-        "phpstan/phpstan-deprecation-rules": "^1.0",
-        "phpstan/phpstan-phpunit": "^1.0",
-        "spatie/pest-plugin-snapshots": "^1.1",
-        "spatie/ray": "^1.28"
+        "phpstan/phpstan-deprecation-rules": "^1.2.1 || ^2.0",
+        "phpstan/phpstan-phpunit": "^1.4.2 || ^2.0",
+        "spatie/pest-plugin-snapshots": "^1.1 || ^2.2.1",
+        "spatie/ray": "^1.43.1"
     },
     "autoload": {
         "psr-4": {
