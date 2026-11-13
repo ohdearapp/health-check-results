@@ -2,6 +2,18 @@
 
 All notable changes to `health-check-results` will be documented in this file.
 
+## 1.0.4 - 2026-11-13
+
+### What changed
+
+* Add PHP 8.6 to the CI test matrix on Ubuntu and Windows, with lowest and stable dependencies, by @Chris53897 in https://github.com/ohdearapp/health-check-results/pull/13.
+
+This is a CI-only patch release. No runtime behavior or dependency requirements changed.
+
+Thanks @Chris53897!
+
+**Full changelog**: https://github.com/ohdearapp/health-check-results/compare/1.0.3...1.0.4
+
 ## 1.0.3 - 2025-11-07
 
 ### What's Changed
