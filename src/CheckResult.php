@@ -35,7 +35,7 @@ class CheckResult
      * @param string $notificationMessage
      * @param string $shortSummary
      * @param string $status
-     * @param array<int|string, mixed, mixed> $meta
+     * @param array<int|string, mixed> $meta
      */
     public function __construct(
         public string $name,
